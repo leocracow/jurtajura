@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Consent Mode v2 — domyślnie odmowa; MUSI być przed GTM -->
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  });
+  // Zgodnie z konfiguracją poprzedniego serwisu — chroni pomiar kampanii Google Ads
+  gtag('set', 'ads_data_redaction', true);
+  gtag('set', 'url_passthrough', true);
+  (function () {
+    try {
+      var z = localStorage.getItem('jj-consent');
+      if (!z) return;
+      var v = JSON.parse(z);
+      var s = v.all ? 'granted' : 'denied';
+      gtag('consent', 'update', {
+        'ad_storage': s, 'ad_user_data': s, 'ad_personalization': s,
+        'analytics_storage': s, 'functionality_storage': s, 'personalization_storage': s
+      });
+      dataLayer.push({ event: 'consent_restored', consent_state: v.all ? 'all' : 'necessary' });
+    } catch (e) {}
+  })();
+  </script>
+  <!-- End Consent Mode -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N6VWSXVQ');</script>
+  <!-- End Google Tag Manager -->
+  <title>Dziennik Jurta Jura — slow życie, natura i pobyty w jurcie</title>
+  <meta name="description" content="Blog Jurta Jura: pomysły na romantyczny weekend, glamping na Jurze, atrakcje w okolicy i życie blisko natury 40 minut od Krakowa.">
+  <link rel="canonical" href="https://jurtajura.pl/blog/">
+
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dziennik Jurta Jura — slow życie, natura i pobyty w jurcie">
+  <meta property="og:description" content="Blog Jurta Jura: pomysły na romantyczny weekend, glamping na Jurze, atrakcje w okolicy i życie blisko natury.">
+  <meta property="og:url" content="https://jurtajura.pl/blog/">
+  <meta property="og:image" content="https://jurtajura.pl/assets/img/wp/romantyczny-weekend-niespodzianka-w-malopolsce.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css?v=20261024">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Dziennik Jurta Jura",
+    "description": "Slow życie, natura i wyjątkowe pobyty w jurcie na Jurze Krakowsko-Częstochowskiej.",
+    "url": "https://jurtajura.pl/blog/",
+    "publisher": {
+      "@type": "LodgingBusiness",
+      "name": "Jurta Jura",
+      "url": "https://jurtajura.pl/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Jurta Jura", "item": "https://jurtajura.pl/" },
+      { "@type": "ListItem", "position": 2, "name": "Dziennik", "item": "https://jurtajura.pl/blog/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6VWSXVQ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <header class="site-header" data-header>
+    <div class="header-inner container">
+      <a class="brand" href="/">
+        <img src="/assets/logo.svg"
+             alt="Jurta Jura — jurty z jacuzzi na Jurze Krakowsko-Częstochowskiej" width="150" height="42">
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Otwórz menu">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav aria-label="Menu główne">
+        <a href="/jurta-polna/">Jurta polna</a>
+        <a href="/jurta-lesna/">Jurta leśna</a>
+        <a href="/#wyposazenie">Wyposażenie</a>
+        <a href="/galeria-jurta-jura/">Galeria</a>
+        <a href="/atrakcje-w-okolicy-jurty/">Okolica</a>
+        <a href="/blog/" aria-current="page">Dziennik</a>
+        <a href="/kontakt-jak-nas-znalezc/">Kontakt</a>
+        <a class="btn btn-voucher" href="/voucher/">Kup voucher</a>
+        <a class="btn btn-header" href="#rezerwacja">Zarezerwuj</a>
+
+        <span class="lang-switch"><span class="is-current" aria-current="true">PL</span><a href="/en/" hreflang="en" lang="en">EN</a><a href="/uk/" hreflang="uk" lang="uk">UA</a></span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc">
+
+    <!-- ============ NAGŁÓWEK ============ -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow reveal">Dziennik</p>
+        <h1 class="reveal">Slow życie, natura <span class="h1-sub">i wyjątkowe pobyty</span></h1>
+        <p class="page-lead reveal">Piszemy o tym, co dzieje się wokół jurty: o powolnych weekendach we dwoje, jurajskich wypadach, kosach zakładających gniazdo przy tarasie i o tym, dlaczego warto czasem zniknąć na dwa dni.</p>
+      </div>
+    </section>
+
+    <!-- ============ WPISY ============ -->
+    <section class="section" id="wpisy">
+      <div class="container">
+        <div class="posts-grid" data-stagger>
+
+          <article class="post reveal">
+            <a class="post-media" href="/jednodniowa-wycieczka-z-jurty-olkusz-wolbrom/">
+              <img src="/assets/img/podziemnyolkusz.webp"
+                   alt="Podziemny Olkusz — ekspozycja w średniowiecznych piwnicach pod rynkiem w Olkuszu" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Na Jurze</p>
+              <h2><a href="/jednodniowa-wycieczka-z-jurty-olkusz-wolbrom/">Jednodniowa wycieczka z jurty z jacuzzi</a></h2>
+              <p>Plan dnia z jurty: Podziemny Olkusz, spacer po jesiennym lesie, obiad w Wolbromiu i powrót na wieczór w jacuzzi pod gwiazdami — godzina po godzinie, z cenami i godzinami otwarcia.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/romantyczny-weekend-w-malopolsce/">
+              <img src="/assets/img/romantyczny-weekend-niespodzianka-w-malopolsce.webp"
+                   alt="Romantyczny weekend niespodzianka w Małopolsce — pobyt we dwoje w jurcie" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Romantycznie</p>
+              <h2><a href="/romantyczny-weekend-w-malopolsce/">Romantyczny weekend niespodzianka w Małopolsce</a></h2>
+              <p>Zbliża się Wasza rocznica, urodziny drugiej połówki, a może planujesz oświadczyny? Niezależnie od okazji, wyjazd-niespodzianka to zawsze strzał w dziesiątkę.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/jurta-na-wylacznosc-odpoczynek-z-dala-od-cywilizacji/">
+              <img src="/assets/img/agroturystyka-jurajska.webp"
+                   alt="Jurta na wyłączność wśród jurajskiej zieleni — odpoczynek z dala od cywilizacji" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Prywatność</p>
+              <h2><a href="/jurta-na-wylacznosc-odpoczynek-z-dala-od-cywilizacji/">Jurta na wyłączność</a></h2>
+              <p>Wypoczynek w jurcie na wsi, z dala od cywilizacji i innych gości, to unikalna forma relaksu mająca szereg zalet — zaczynając od bliskości natury.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/glamping-luksusowy-camping-w-zgodzie-z-natura/">
+              <img src="/assets/img/schody-na-antresole-1.webp"
+                   alt="Drewniane schody na antresolę w jurcie — luksusowy glamping w zgodzie z naturą" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Glamping</p>
+              <h2><a href="/glamping-luksusowy-camping-w-zgodzie-z-natura/">Glamping — luksusowy camping w zgodzie z naturą</a></h2>
+              <p>Kiedy myślimy o wakacjach, często wyobrażamy sobie luksusowe hotele w egzotycznych miejscach. Coraz więcej osób odkrywa jednak urok glampingu.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/gdzie-pojechac-na-weekend-w-polsce/">
+              <img src="/assets/img/e04940617391cb73c51d739e21d8c85185953e6d4a34cba2.jpg"
+                   alt="Pomysł na weekendowy wyjazd w Polsce — nocleg w jurcie na Jurze" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Podróże</p>
+              <h2><a href="/gdzie-pojechac-na-weekend-w-polsce/">Gdzie pojechać na weekend w Polsce?</a></h2>
+              <p>Polska kryje w sobie wiele pięknych i ciekawych miejsc, idealnych do zwiedzenia na weekend. Podpowiadamy, gdzie zwolnić na dwa dni.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/dlaczego-warto-wybrac-nocleg-w-jurcie/">
+              <img src="/assets/img/DSC_0470-scaled-1.jpeg"
+                   alt="Nocleg w jurcie blisko natury — dlaczego warto wybrać jurtę" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Nocleg w jurcie</p>
+              <h2><a href="/dlaczego-warto-wybrac-nocleg-w-jurcie/">Dlaczego warto wybrać nocleg w jurcie?</a></h2>
+              <p>Coraz więcej osób szuka sposobu na ucieczkę od miasta w stronę natury. Mile widziane są miejsca odcięte od świata — i takie właśnie są jurty.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/jak-sie-przygotowac-na-wyjazd-na-agroturystyke/">
+              <img src="/assets/img/DJI_0204.jpg"
+                   alt="Widok z lotu ptaka na agroturystykę na Jurze — jak przygotować się do wyjazdu" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Poradnik</p>
+              <h2><a href="/jak-sie-przygotowac-na-wyjazd-na-agroturystyke/">Jak się przygotować na wyjazd na agroturystykę?</a></h2>
+              <p>Agroturystyka to wspaniały sposób, aby wypocząć na łonie natury i odetchnąć od stresującego życia w mieście. Co spakować i o czym pamiętać?</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/ciekawe-miejsca-na-wyjazd-we-dwoje/">
+              <img src="/assets/img/DSC_8756.jpg"
+                   alt="Ciekawe miejsca na wyjazd we dwoje — jurta z jacuzzi na Jurze" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">We dwoje</p>
+              <h2><a href="/ciekawe-miejsca-na-wyjazd-we-dwoje/">Ciekawe miejsca na wyjazd we dwoje</a></h2>
+              <p>Wyjazd z drugą połówką warto wcześniej zaplanować, żeby zapewnić sobie jak najciekawsze wspomnienia. Oto kilka pomysłów.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/gdzie-wynajac-domek-z-jacuzzi/">
+              <img src="/assets/img/fb8a13cfc7991540a9ffef8bcdea6e4e8c712af07dea3e0d.jpeg"
+                   alt="Domek z jacuzzi na wynajem — relaks w ciepłej wodzie pod gołym niebem" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Jacuzzi</p>
+              <h2><a href="/gdzie-wynajac-domek-z-jacuzzi/">Gdzie wynająć domek z jacuzzi?</a></h2>
+              <p>Korzystanie z jacuzzi to doskonały sposób na relaks, który zapewnia istotne korzyści zdrowotne. Gdzie szukać miejsca z wanną na wyłączność?</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/gdzie-wyjechac-na-ferie/">
+              <img src="/assets/img/ferie-w-jurcie-.webp"
+                   alt="Ferie w jurcie zimą — zimowy wyjazd na Jurę Krakowsko-Częstochowską" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Zima</p>
+              <h2><a href="/gdzie-wyjechac-na-ferie/">Gdzie wyjechać na ferie?</a></h2>
+              <p>Planując ferie zimowe, warto postawić na coś nietuzinkowego. Jeśli marzysz o odpoczynku z dala od miejskiego zgiełku — mamy pomysł.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/czy-masz-czas-dla-siebie/">
+              <img src="/assets/img/2a2a67f3ffb98b3eb3a772f0723946a3a52bfc718d10a75f.jpg"
+                   alt="Czas dla siebie w jurcie — chwila wytchnienia od codzienności" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Slow life</p>
+              <h2><a href="/czy-masz-czas-dla-siebie/">Czy masz czas dla siebie?</a></h2>
+              <p>Zastanawiałeś się kiedyś, kiedy ostatni raz naprawdę odpocząłeś? W natłoku codziennych obowiązków łatwo o tym zapomnieć.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/traveller-review-award-2025/">
+              <img src="/assets/img/traveller-review-award2025.webp"
+                   alt="Traveller Review Award 2025 dla Jurta Jura od Booking.com" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Wyróżnienia</p>
+              <h2><a href="/traveller-review-award-2025/">Traveller Review Award 2025</a></h2>
+              <p>Z radością informujemy, że Jurta Jura po raz drugi z rzędu została uhonorowana nagrodą przyznawaną na podstawie ocen gości.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/szukasz-nietypowego-noclegu-blisko-natury-jurtajura/">
+              <img src="/assets/img/jurta-jura-noclegi.webp"
+                   alt="Wynajem jurty — nietypowy nocleg blisko natury na Jurze" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Nocleg w jurcie</p>
+              <h2><a href="/szukasz-nietypowego-noclegu-blisko-natury-jurtajura/">Wynajem jurty — dla kogo to idealna opcja?</a></h2>
+              <p>Jurta to tradycyjne miejsce noclegu ludów tureckich i mongolskich. Przypomina okrągły namiot — i wycisza jak nic innego.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/jurta-jako-alternatywa-dla-hotelu-piec-powodow-by-sprobowac-glamping/">
+              <img src="/assets/img/alternatywa-dla-hotelu.webp"
+                   alt="Jurta jako alternatywa dla hotelu — pięć powodów, by spróbować glampingu" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Glamping</p>
+              <h2><a href="/jurta-jako-alternatywa-dla-hotelu-piec-powodow-by-sprobowac-glamping/">Jurta jako alternatywa dla hotelu</a></h2>
+              <p>W czasach, gdy tempo życia nieustannie przyspiesza, coraz więcej osób szuka odpoczynku w naturze. Pięć powodów, by spróbować glampingu.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <a class="post-media" href="/rodzina-kosow/">
+              <img src="/assets/img/gniazdo-kosa.webp"
+                   alt="Gniazdo kosa przy jurcie — ptaki w otoczeniu Jurty Jura" loading="lazy" decoding="async">
+            </a>
+            <div class="post-body">
+              <p class="post-tag">Z życia jurty</p>
+              <h2><a href="/rodzina-kosow/">Rodzina kosów</a></h2>
+              <p>Nasza jurta otoczona jest wysokimi drzewami i gęstymi zaroślami, toteż stanowi raj dla ptaków. W tym roku zamieszkały z nami kosy.</p>
+              <span class="card-link">Czytaj dalej <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REZERWACJA ============ -->
+    <section class="section booking" id="rezerwacja">
+      <div class="container booking-inner reveal">
+        <p class="eyebrow eyebrow-light">Od czytania do wyjazdu</p>
+        <h2>Najlepszy wpis <em>przeżywa się na miejscu</em></h2>
+        <p>Zamiast czytać o powolnych weekendach — spędźcie jeden u nas. Dwie jurty z prywatnym jacuzzi, 40 minut od Krakowa.</p>
+        <div class="hero-booking booking-bar" data-ido data-ido-lang="1" data-ido-locale="pl" data-ido-button="Zarezerwuj" data-ido-from="Przyjazd" data-ido-to="Wyjazd"><div class="iai-search"></div></div>
+        <div class="booking-actions">
+          <a class="btn btn-solid" href="tel:+48502315275">Zadzwoń: 502 315 275</a>
+          <a class="btn btn-ghost" href="/#jurty">Wybierz jurtę</a>
+        </div>
+        <p class="booking-note">Na prezent? <a href="/voucher/">Kupcie voucher</a> — ważny 12 miesięcy.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid footer-grid-5">
+      <div class="footer-brand">
+        <p class="brand">
+          <img src="/assets/logo.svg" alt="Jurta Jura" width="164" height="46" loading="lazy">
+        </p>
+        <p>Dwie całoroczne jurty z prywatnym jacuzzi na Jurze Krakowsko-Częstochowskiej. Cisza, natura i pełna prywatność — 40 minut od Krakowa.</p>
+      </div>
+      <nav aria-label="Na miejscu">
+        <h3>Na miejscu</h3>
+        <a href="/jurta-polna/">Jurta polna</a>
+        <a href="/jurta-lesna/">Jurta leśna</a>
+        <a href="/#wyposazenie">Wyposażenie</a>
+        <a href="/galeria-jurta-jura/">Galeria</a>
+      </nav>
+      <nav aria-label="Informacje">
+        <h3>Informacje</h3>
+        <a href="/atrakcje-w-okolicy-jurty/">Atrakcje w okolicy</a>
+        <a href="/voucher/">Voucher na prezent</a>
+        <a href="/kontakt-jak-nas-znalezc/">Kontakt i dojazd</a>
+        <a href="/cennik-i-warunki-pobytu/">Cennik i warunki</a>
+        <a href="/blog/">Dziennik</a>
+        <a href="/polityka-prywatnosci/">Polityka prywatności</a>
+        <button type="button" class="footer-btn-link" data-cookie-settings>Ustawienia cookies</button>
+        <a href="/regulamin-sklepu/">Regulamin</a>
+      </nav>
+      <nav aria-label="Dojazd z miast">
+        <h3>Dojazd z miast</h3>
+        <a href="/weekend-z-warszawy/">Z Warszawy</a>
+        <a href="/weekend-z-wroclawia/">Z Wrocławia</a>
+        <a href="/weekend-z-katowic/">Z Katowic</a>
+        <a href="/kontakt-jak-nas-znalezc/#dojazd">Z Krakowa</a>
+      </nav>
+      <div>
+        <h3>Kontakt</h3>
+        <address class="address">
+          Przybysławice 6<br>32-075 Przybysławice<br>
+          <a href="tel:+48502315275">502 315 275</a><br>
+          <a href="tel:+48504073119">504 073 119</a><br>
+          <a href="https://www.instagram.com/jurtajura/" rel="noopener" target="_blank">Instagram @jurtajura</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© Jurta Jura 2026 · Jura Krakowsko-Częstochowska</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <a class="btn btn-call" href="tel:+48502315275" aria-label="Zadzwoń: 502 315 275">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg>
+      <span>Zadzwoń</span>
+    </a>
+    <a class="btn btn-solid btn-book" href="#rezerwacja">Zarezerwuj</a>
+  </div>
+
+  <script src="/script.js?v=20261020" defer></script>
+</body>
+</html>
