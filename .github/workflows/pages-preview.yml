@@ -1,0 +1,45 @@
+name: Podgląd strony (GitHub Pages)
+
+on:
+  push:
+    branches: [main, claude/adoring-hamilton-prn594]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Przygotuj podgląd
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' \
+            --exclude '.DS_Store' --exclude 'dev-server.py' --exclude '*.csv' ./ _site/
+          # Strona używa ścieżek względem domeny (/styles.css); na Pages działa pod /<repo>/
+          PREFIX="/${GITHUB_REPOSITORY#*/}"
+          find _site -name '*.html' -print0 | xargs -0 sed -i -E \
+            "s#((href|src|action|srcset|poster)=\")/([^/])#\1${PREFIX}/\3#g"
+          # podgląd nie powinien być indeksowany
+          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          find _site -name '*.html' -print0 | xargs -0 sed -i \
+            's#</head>#<meta name="robots" content="noindex,nofollow"></head>#'
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
