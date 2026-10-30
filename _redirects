@@ -1,0 +1,12 @@
+# Reguły adresów dla Netlify (odpowiednik .htaccess; dev-server.py robi to samo lokalnie)
+/atrakcje-w-okolicy-jurty/       /okolica.html        200
+/galeria-jurta-jura/             /galeria.html        200
+/kontakt-jak-nas-znalezc/        /kontakt.html        200
+/wyposazenie-jurty-jurta-jura/   /wyposazenie.html    200
+/en/   /en/index.html   200
+/de/   /de/index.html   200
+/uk/   /uk/index.html   200
+/en/:page/   /en/:page.html   200
+/de/:page/   /de/:page.html   200
+/uk/:page/   /uk/:page.html   200
+/:page/      /:page.html      200
