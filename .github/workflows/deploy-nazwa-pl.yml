@@ -1,0 +1,36 @@
+name: Publikacja na nazwa.pl (FTP)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-nazwa-pl
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Wgrywa tylko zmienione pliki. Nie usuwa niczego, czego nie wgrał wcześniej
+      # (np. .htaccess, którego nie ma w repozytorium).
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DIR }}
+          protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            .DS_Store
+            **/.DS_Store
+            dev-server.py
+            linkiJurta.csv
+            _redirects
+            .htaccess
